@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Livvic", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-cacs-teal: #2B8A9E;
+  --color-cacs-teal-dark: #216E7E;
+  --color-cacs-ink: #0D1E27;
+  --color-cacs-slate: #4E626D;
+  --color-cacs-mist: #F3F8FA;
+  --color-cacs-ice: #E7F2F5;
+  --color-cacs-line: #E5ECEF;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: #ffffff;
+    color: #0d1e27;
+  }
+}
+
+@page {
+  size: letter portrait;
+  margin: 0.25in;
+}
+
+@media print {
+  header,
+  .no-print {
+    display: none !important;
+  }
+  html {
+    font-size: 12.5px !important;
+    background: #ffffff !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  body {
+    background: #ffffff !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .pdf-sheet {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-shadow: none !important;
+    border-color: #e5ecef !important;
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+    break-after: page;
+    page-break-after: always;
+    margin: 0 !important;
+  }
+  .pdf-sheet:last-of-type {
+    break-after: auto !important;
+    page-break-after: auto !important;
+  }
+}

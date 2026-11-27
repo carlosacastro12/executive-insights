@@ -1,0 +1,6 @@
+{
+  "name": "CACS Executive Insights",
+  "description": "Commerce Advisors Consulting Solutions — Executive Insights internal report (August–November 2026) featuring a clean white Bento cover, leadership profile, twelve global solutions, research, and Q1 analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
